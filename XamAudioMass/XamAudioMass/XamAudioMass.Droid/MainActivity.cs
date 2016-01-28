@@ -6,6 +6,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using Java.IO;
 
 namespace XamAudioMass.Droid
 {
@@ -52,10 +53,23 @@ namespace XamAudioMass.Droid
                 //button.Click += delegate {
                 //	button.Text = string.Format ("{0} clicks!", count++);
                 //};
-
+                
 
                 Button audioFeedButton = new Button(this);
                 audioFeedButton.Text = feed.Title;
+
+                //var activity2 = new Intent(this, typeof(IntentUriType));
+                //activity2.PutExtra("MyData", "Data from Activity1");
+
+                Intent intent = new Intent();
+                intent.SetAction(Android.Content.Intent.ActionView);
+                intent.SetDataAndType(Android.Net.Uri.Parse(feed.Link), "audio/*");
+                ///startActivity(intent);
+
+                audioFeedButton.Click += delegate {
+                    StartActivity(intent);
+                };
+
                 linearLayout.AddView(audioFeedButton);
             }
             scrollView.AddView(linearLayout);

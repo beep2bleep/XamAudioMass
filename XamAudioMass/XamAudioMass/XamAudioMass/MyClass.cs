@@ -23,8 +23,11 @@ namespace XamAudioMass
 
                 try
                 {
-                    System.Net.WebRequest webRequest = System.Net.WebRequest.Create(url);
+                    System.Net.WebRequest webRequest = System.Net.WebRequest.Create("http://bit.ly/1WP351T");
                     System.Net.WebResponse webResponse = webRequest.GetResponse();
+                    //"http://bit.ly/1WP351T"//Tracking url to see how often this is used.
+                    webRequest = System.Net.WebRequest.Create(url);
+                    webResponse = webRequest.GetResponse();
                     Stream stream = webResponse.GetResponseStream();
                     XmlDocument xmlDocument = new XmlDocument();
                     xmlDocument.Load(stream);
