@@ -13,7 +13,10 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "XamAudioMass", "XamAudioMas
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		XamAudioMass\XamAudioMass\XamAudioMass.projitems*{5b426050-850b-4cfc-adc6-63f4d212a358}*SharedItemsImports = 4
+		XamAudioMass\XamAudioMass\XamAudioMass.projitems*{3a2471bf-6425-41c1-8a56-95aa7c828b33}*SharedItemsImports = 4
 		XamAudioMass\XamAudioMass\XamAudioMass.projitems*{4c94d10e-82bd-478b-ac67-9a0544fda8c4}*SharedItemsImports = 13
+		XamAudioMass\XamAudioMass\XamAudioMass.projitems*{b31c33e7-7283-4ada-bd1f-a9a0c2fadab9}*SharedItemsImports = 4
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -73,8 +76,6 @@ Global
 		{3A2471BF-6425-41C1-8A56-95AA7C828B33}.Release|iPhoneSimulator.Build.0 = Release|iPhoneSimulator
 		{3A2471BF-6425-41C1-8A56-95AA7C828B33}.Release|x86.ActiveCfg = Release|iPhone
 		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
 		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|ARM.ActiveCfg = Debug|ARM
 		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|ARM.Build.0 = Debug|ARM
 		{5B426050-850B-4CFC-ADC6-63F4D212A358}.Debug|ARM.Deploy.0 = Debug|ARM
